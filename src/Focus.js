@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 export default function Focus() {
   const inputRef = useRef(null);
 
   // Remember to check if the DOM element’s current reference still exists, as state changes in React are asynchronous.
   const focusTextInput = () => {
-    console.log(inputRef.current);
+    // console.log(inputRef.current);
     if (inputRef.current) {
       inputRef.current.focus();
     }
